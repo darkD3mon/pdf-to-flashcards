@@ -1,0 +1,46 @@
+Methoden der Wissensverarbeitung°Technical  Foundations of IoT   07.10.19
+Guest Lecture: Price Optimization in the Retail Sector (Felix Hoffman - 7Learnings)°Lecture Dates ( Tuesday , 9:45  –  2  # Date  1 Tuesday, 8 October 2019 Introduction 2 Tuesday, 15 October 2019 Business Foundations of IoT 3 Tuesday, 22 October 2019 Technical Foundation of IoT I Tuesday, 29 October 2019 No Lecture 4 Tuesday, 5 November 2019  5 Tuesday, 12 November 2019  6 Tuesday, 19 November 2019 Technical Foundations of IoT II 7 Tuesday, 26 November 2019  8 Tuesday, 3 December 2019  9 Tuesday, 10 December 2019 AI/ Machine Learning 10 Tuesday, 17 December 2019 AI/ Machine Learning Tuesday, 24 December 2019 No Lecture Tuesday, 31 December 2019 No Lecture 11 Tuesday, 7 January 2020 AI/ Machine Learning 12 Tuesday, 14 January 2020 AI/ Machine Learning 13 Tuesday, 21 January 2020 Buffer/ Repetition 14 Tuesday, 28 January 2020 Exam
+°3  PART I
+Learning Objectives°4  § Which    IoT  system   relationships? § What is an  IoT Device   ,  sensors and  actuators ? §   for  IoT  appropriate one? § How do we process  all the  sensor data and how do we transform  it into  knowledge ? 
+IoT Reference Model°5  
+Hands On, 5’: IoT Reference Model°6  Which technical components are usually part of an IoT system ? What are the relationships between them ? Make a  little drawing on a post - it. We will check out  the results together .  
+IoT Reference Model°7  Source:  Amberg (2019)
+IoT Reference Model°8   Source:  Amberg (2019)
+IoT Devices°9  
+Anatomy of an IoT Device°10  Source:  Bridgera (2019)  Antenna
+FPGAs...°11   –  
+°12 Microcontroller A  microcontroller is a  small ,  low power  computer . Sometimes it is also just  called controller or board . A  microcontroller contains one or more CPUs ( processor cores )  along with memory and programmable input/output peripherals . Pins  for General  Purpose Input  and Output (GPIO). Embedded  systems typically use a  microprocessor as components . Source:  Amberg (2019) 
+Input and Output (GPIO) pins. GPIOs allow a controller to measure and °13    control. Measuring =  reading  sensor values from  input  pins.  Controlling =  writing  actuator values to  output pins Source:  Amberg (2019) 
+Arduino Uno (Developer Board)°14  An  electronics prototyping platform . Bild:  rs - online.com 
+make sure they are on 3V only!)°15   • 1x  ESP8266 including UBS/UART,    • 2x  RGBW  NeoPixel on board • 2x  Grove pinout  (analog and I2C,   • 1x  Adafruit compatible FeatherWing pinout ( tested :  NeoPixel - , 7 - Segment - ,  Charlie  Wings ) • 1x  Bosch  Sensortec BME680  (Gas/VOC,  Humidity , Barometer,  Temperatur)
+LoPy4 (Developer Board)°16  
+Microcontroller form factors°17  Form  factor : an  aspect of design  which defines and prescribes the size ,  shape ,  and other physical specifications of hardware components ,  particularly in  electronics and electronic  packaging . Prototyping hardware form  factors allow extensions :  Arduino (Uno  and MKR)  with " shield "  extensions .  Adafruit Feather with FeatherWing extensions .  Source:  Amberg (2019) 
+Programming on a microcontroller°18  Most  microcontrollers are programmed via USB.  (Cross - )  compiling happens on  your computer .  The  binary has to be uploaded to the board . Uploaded " firmware "  runs stand - alone . Source:  Amberg (2019) 
+the same ICs, logic components, and programmability.°19 Field -    - programmable”).     .   Source: Lin, S. (2018)  Hot Topic
+°20 MatchX LoRaWAN Gateway Source:  MatchX (2019),  CNXSoft (2017) 
+device and is therefore not recommended.°21 Antennas ( Exemples LoRaWAN )  PCB  Antenna UFL  to SMA Adapter ©  Siretta © SOS Electronic 868  MhZ LoRaWAN - Antenna with SMA  Adapter NOTE: Using a  LoRa / Sigfox radio without  
+Connectors°22   – 
+°23 Breadboard Source:  Amberg (2019) 
+All modules designed by °24 Grove Grove  is a    B y  Seeed Studio.  Seeed are open source.  CC BY - SA seeedstudio.com  
+Power for Grove Module, 5V/3.3V°25 Grove Analog  An  = Primary Analog Input An+1  =  Secondary Analog Input VCC  =   GND  = Ground CC BY - SA seeedstudio.com  
+Power for Grove Module, 5V/3.3V°26 Grove I2C   - speed peripheral ICs to processors  and microcontrollers in short - distance, intra -  SCL  = I2C  Clock SDA = I2C Data VCC  =   GND  = Ground CC BY - SA  seeedstudio.com
+°27 Soldering  ©  reichelt.de CC BY - SA  makerspaces.com
+Sensors & Actuators°28   – 
+Sensors & Actuators°29   “A sensor is a device that responds to a physical stimulus (such as heat, light, sound, pressure, magnetism, or a particular motion) and transmits a resulting impulse (as for measurement or operating a control)” “An actuator is a mechanical device for moving or controlling something . ” Source: Merriam - Webster (2019)
+Digital Sensors°30   Source: Merriam - Webster (2019)  An analog  sensor measures continuously the variable  and detects any proportional  value between 100%  and 0%.  For this reason ,  the measure provided by the analog  sensor is more precise than the one provided by the digital  sensor .  à infinite  set of possible values  A digital  sensor only detects two possible status :  if it is working at  100%  or at 0%.  à finite  set of possible values ( One - Zero)
+Analog vs. Digital Sensors & Actuators°31   Source: https:// www.test - and - measurement - world.com
+°32 I2C Protocol  Source: https:// learn.sparkfun.com /tutorials/i2c/all • The Inter - integrated Circuit (I 2 C) Protocol  is a  protocol intended to allow multiple " slave " digital  integrated circuits (" chips ")  to communicate with one or more " master "  chips . • Like  the Serial  Peripheral Interface (SPI),  it is only intended for short distance communications within a  single device .  • It only requires two signal wires to exchange information .
+Analog vs. Digital°33   Source:  www.ksixmobile.com
+Discussion, 10’: Sensors & Actuators°34  What kind of sensors & actuators are you familiar with ? And what kind of IoT use case could they contribute to ? Example : Te m p e ra t u r e sensor – > Monitoring  transport of frozen goods 
+Sensors & Actuators°35   Source: Postscapes 1 2 3 4 5 6 7 8 9 11 10 12
+Sensors & Actuators in the market (examples)°36  
+than when these sources were used °37  Sensor Fusion  is combining sensory data or   the resulting information   individually.” Source: Wikipedia Hot Topic
+Example: Sensor Fusion for Autonomous Driving°38   Source: de Souza, W. (2017)
+: Edge Computing on Microcontrollers°39  UTensor  Hot Topic Source: Tan, N. (2018) https:// github.com / utensor
+Mechanical characteristics? Corrosion resistance?°40  •   •   consistant  •  •   by manufacturer)? •  
+Energy Harvesting°41   Hot Topic Energy harvesting is defined as a  process wherein the sources such  as mechanical load ,  vibrations ,  temperature gradients and light , etc.,  are scavenged and converted to obtain relatively small levels of power in  the nW - mW  range . Source: Magnetic Nanostructured Materials, 2018
+IoT Connectivity°42  
+Discussion, 5’: Transmission Technologies°43  What kind of transmission technologies are you familiar with ? And what kind of IoT use case could they contribute to ? Example : LoRaWAN – > Smart City  use cases ( long - range,  low bandwith ) 
+Comparing Wireless technologies°44   Source: IoT Analytics
+Hints for selecting Wireless Technologies°45  • Which latency can your application tolarate ? • Is your application mobile (e. g. a  moving device )?  Does your application have to work on multiple  continents ? • How cost sensitive  is your application ? • Does the transmission technology have to ubiquitously available ? • Can  you cope with a  vendor lock - in ? 
+Compulsory Reading until the next Lecture°46   How to build a  disposable microchip “,  14.09.2019,   -  - to - build - a - disposable - microchip . 

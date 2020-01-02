@@ -21,5 +21,8 @@
   "bugs": {
     "url": "https://github.com/darkD3mon/pdf-to-flashcards/issues"
   },
-  "homepage": "https://github.com/darkD3mon/pdf-to-flashcards#readme"
+  "homepage": "https://github.com/darkD3mon/pdf-to-flashcards#readme",
+  "dependencies": {
+    "pdfjs-dist": "^2.2.228"
+  }
 }
