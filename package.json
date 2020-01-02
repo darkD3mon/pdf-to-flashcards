@@ -1,0 +1,25 @@
+{
+  "name": "pdf-to-flashcards",
+  "version": "1.0.0",
+  "description": "Hello world",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/darkD3mon/pdf-to-flashcards.git"
+  },
+  "keywords": [
+    "anki",
+    "pdf",
+    "flashcards",
+    "university"
+  ],
+  "author": "Jonas Faehrmann",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/darkD3mon/pdf-to-flashcards/issues"
+  },
+  "homepage": "https://github.com/darkD3mon/pdf-to-flashcards#readme"
+}
