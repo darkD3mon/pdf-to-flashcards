@@ -23,6 +23,6 @@
   },
   "homepage": "https://github.com/darkD3mon/pdf-to-flashcards#readme",
   "dependencies": {
-    "pdfjs-dist": "^2.2.228"
+    "pdfjs-dist": "^2.16.105"
   }
 }
